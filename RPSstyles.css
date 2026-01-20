@@ -1,0 +1,178 @@
+html {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #0f172a, #020617);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+#navbar-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* Nav list */
+#navbar-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav items */
+.navbar-item {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cbd5f5;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Hover underline animation */
+.navbar-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: width 0.25s ease;
+}
+
+.navbar-item:hover {
+  color: #f8fafc;
+}
+
+.navbar-item:hover::after {
+  width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #navbar-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar-list {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.75rem;
+    gap: 1rem;
+  }
+
+  .navbar-item {
+    padding: 0.25rem 0;
+  }
+}
+
+
+#RPScontainer {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+
+#choice-container {
+    display: flex;
+    background-color: beige;
+    justify-content: center;
+    width: 100%;
+}
+
+#score-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: beige;
+
+}
+
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    justify-content: center;
+    text-align: center;
+
+}
+#choice-container {
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#you-chose-container {
+    text-align: center;
+    padding: 0 30px;
+}
+
+#computer-chose-container {
+    text-align: center;
+    padding: 0 30px;
+}
+
+#winner-container {
+    font-size: 30px;
+    text-align: center;
+    height: 30px;
+    padding: 20px;
+    background-color: beige;
+}
+
+#rockimg {
+    height: 60px;
+}
+#paperimg {
+    height: 60px;
+}
+#scissorsimg {
+    height:60px;
+}
+
+.button {
+    padding: 20px;
+    margin: 30px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
