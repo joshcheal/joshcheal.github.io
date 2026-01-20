@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./RPSstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  </head>
+  
+  <body>
+    <header>
+        <div id="navbar-wrapper">
+            <div id="navbar-logo">Logo</div>
+                <ul id="navbar-list">
+                    <li class="navbar-item">Home</li>
+                    <li class="navbar-item">RPS Game</li>
+                    <li class="navbar-item">Other Games</li>
+                    <li class="navbar-item">Contact</li>
+                </ul>
+        </div>
+    </header>
+        
+    <main>
+        <div id="RPScontainer">
+            <div id="title-container">
+                <h1>Rock Paper Scissors Game</h1>
+                <h2>Choose Rock, Paper or Scissors from the buttons below. <br> First to 5 wins!</h2>
+            </div>
+            <div id="button-container"> 
+                <button id="rock" class="button"><img id="rockimg" src=Rock-paper-scissors_(rock).png>Rock</button>
+                <button id="paper" class="button"><img id="paperimg" src="Rock-paper-scissors_(paper).png">Paper</button>
+                <button id="scissors" class="button"><img id="scissorsimg" src="Rock-paper-scissors_(scissors).png">Scissors</button>
+            </div>
+            </div>
+            <div id="choice-container">
+                <div id="you-chose-container">
+                    <div id="you-chose-hide"><h3>You Chose:</h3></div>
+                    <div><p id=youChose></p></div>
+                </div>
+                <div id="computer-chose-container">
+                    <div id="computer-chose-hide"><h3>Computer Chose:</h3></div>
+                    <div><p id="computer-chose"></p></div>
+                </div>
+            </div>
+                        <div id="winner-container">
+            </div>
+            <div id="score-container">
+                <div class="score-box">
+                    <h3>Your score = </h3>
+                    <h4 id="your-score">0</h4>
+                </div>
+                <div class="score-box">
+                    <h3>Computer score =</h3>
+                    <h4 id="computer-score">0</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+      
+    </footer>
+    <script src="RPSscript.js"></script>
+  </body>
+</html>
